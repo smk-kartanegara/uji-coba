@@ -230,7 +230,20 @@
       </aside>
     </section>
 
-    
+    <section id="kontak" class="card fade-in" style="margin-top:18px">
+      <div class="section-title"><h3 style="margin:0">Kontak & Form</h3></div>
+      <form onsubmit="event.preventDefault();submitContact();" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <input name="name" placeholder="Nama" required />
+        <input name="email" placeholder="Email" required />
+        <input name="subject" placeholder="Subjek" style="grid-column:1/3" />
+        <textarea name="message" placeholder="Pesan" rows="4" style="grid-column:1/3"></textarea>
+        <div style="grid-column:1/3;display:flex;justify-content:flex-end;gap:8px">
+          <button class="navlink" type="reset">Reset</button>
+          <button class="cta" type="submit">Kirim</button>
+        </div>
+      </form>
+    </section>
+
   </div>
 
   <!-- Floating actions -->
